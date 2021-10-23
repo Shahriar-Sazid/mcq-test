@@ -106,9 +106,12 @@ $length: 16px;
 }
 .timer {
   display: flex;
-  background: $bg-color;
+  background: mix($primary-color, $bg-color, 0.5);
   border-radius: 10px;
   padding: 8px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   :first-child {
     flex-grow: 1;
   }
