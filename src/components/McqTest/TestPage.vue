@@ -1,9 +1,9 @@
 <template>
   <div class="test-page">
     <div class="timer">
-      <span><h2>Remaining Time</h2></span>
+      <span><h3>Remaining Time</h3></span>
       <span
-        ><h2>{{ secondToHhMmSs(timeInSecond) }}</h2></span
+        ><h3>{{ secondToHhMmSs(timeInSecond) }}</h3></span
       >
     </div>
     <br />
