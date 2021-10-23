@@ -110,6 +110,7 @@ $length: 16px;
   border-radius: 10px;
   padding: 8px 30px;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: 1;
   :first-child {
