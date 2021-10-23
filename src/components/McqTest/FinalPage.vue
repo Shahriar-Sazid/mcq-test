@@ -1,28 +1,29 @@
 <template>
   <div class="start-page">
-    <h2 class="top-heading">MCQ TEST</h2>
-    <h4>Total {{ totalQuestion }} questions</h4>
-    <h4>Total time: {{ secondToHhMmSs(totalQuestion * 10) }}</h4>
-    <button class="start-button" @click="onStart">START</button>
+    <h2 class="top-heading">MCQ RESULT</h2>
+    <div class="celebrate-logo">
+      <img src="@/assets/pngaaa.com-1321842.png" alt="" />
+    </div>
+    <h4>You got {{ score }} points</h4>
+
+    <button class="start-button" @click="tryAgain">TAKE AGAIN</button>
     <br /><br />
   </div>
 </template>
 
 <script>
-import { secondToHhMmSs } from "./../../util";
 export default {
-  name: "StartPage",
-  props: ["totalQuestion"],
+  name: "TestPage",
+  props: ["score"],
   methods: {
-    onStart() {
-      this.$emit("next-page");
+    tryAgain() {
+      this.$emit("try-again");
     },
-    secondToHhMmSs: secondToHhMmSs,
   },
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 .start-page {
   min-width: 320px;
   width: 25%;
@@ -34,8 +35,8 @@ export default {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  color: #6a1ce8;
   text-align: center;
+  color: #6a1ce8;
 }
 .start-button {
   border: 0;
@@ -55,6 +56,11 @@ export default {
     /* Scaling button to 0.98 to its original size */
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
     /* Lowering the shadow */
+  }
+}
+.celebrate-logo {
+  img {
+    height: 86px;
   }
 }
 </style>

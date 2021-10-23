@@ -1,0 +1,82 @@
+[
+  {
+    "title": "In JavaScript the x===y statement implies that:",
+    "options": [
+      "Both x and y are equal in value, type and reference address as well.",
+      "Both are x and y are equal in value only.",
+      "Both are equal in the value and data type.",
+      "Both are not same at all."
+    ],
+    "answer": "Both are equal in the value and data type."
+  },
+  {
+    "title": "What are the three important manipulations done in a for loop on a loop variable?",
+    "options": [
+      "Initialization,Testing, Incrementation",
+      "Updation, Incrementation, Initialization",
+      "Initialization,Testing, Updation",
+      "Testing, Updation, Testing"
+    ],
+    "answer": "Initialization,Testing, Updation"
+  },
+  {
+    "title": "A collection of elements of the same data type which may either in order or not, is called _____.",
+    "options": ["String", "Array", "Serialized Object", "Object"],
+    "answer": "Array"
+  },
+  {
+    "title": "The execution of a function stops when the program control encounters the _________ statement in the body of the function.",
+    "options": [
+      "return statement",
+      "continue statement",
+      "break statement",
+      "goto statement"
+    ],
+    "answer": "return statement"
+  },
+  {
+    "title": "Why is JavaScript called a structured programming language?",
+    "options": [
+      "Because all popular web browsers support JavaScript as they provide built-in execution environments",
+      "Because it is an object-oriented programming language that uses prototypes rather than using classes for inheritance",
+      "Because it follows the syntax and structure of the C programming language, which is a structured programming language",
+      "Because it ignores spaces, tabs, and newlines that appear in JavaScript programs"
+    ],
+    "answer": "Because it follows the syntax and structure of the C programming language, which is a structured programming language"
+  },
+  {
+    "title": "Which of the following is the correct statement of WHILE loop start?",
+    "options": [
+      "while (i <= 10)",
+      "while (i <= 10; i++)",
+      "while i = 1 to 10",
+      "None of These"
+    ],
+    "answer": "while (i <= 10)"
+  },
+  {
+    "title": "What was the original name of JavaScript when it discovered?",
+    "options": ["LiveScript", "EScript", "JScript", "Mocha"],
+    "answer": "Mocha"
+  },
+  {
+    "title": "Which of the following JavaScript operator is used to assign a value to a variable based on some condition?",
+    "options": [
+      "Assignment operator",
+      "Bitwise Operator",
+      "Conditional operator",
+      "Logical Operator"
+    ],
+    "answer": "Conditional operator"
+  },
+  {
+    "title": "Which of the following built-in method is used to remove the last element from an array and return that element?",
+    "options": ["last()", "pop()", "get()", "None of the above."],
+    "answer": "pop()"
+  },
+  {
+    "title": "What are the different types of Pop up boxes available in JavaScript?",
+    "options": ["Alert", "Prompt", "Confirm", "All of the above"],
+    "answer": "All of the above"
+  }
+]
