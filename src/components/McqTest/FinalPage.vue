@@ -13,11 +13,15 @@
 
 <script>
 export default {
-  name: "TestPage",
-  props: ["score"],
+  name: "FinalPage",
+  data() {
+    return {
+      score: this.$route.params.score
+    }
+  },
   methods: {
     tryAgain() {
-      this.$emit("try-again");
+      this.$router.push({name: 'start-page'})
     },
   },
 };

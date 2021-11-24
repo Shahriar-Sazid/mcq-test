@@ -2,20 +2,31 @@
   <div class="start-page">
     <h2 class="top-heading">MCQ TEST</h2>
     <h4>Total {{ totalQuestion }} questions</h4>
-    <h4>Total time: {{ secondToHhMmSs(totalQuestion * 10) }}</h4>
+    <h4>Total time: {{ secondToHhMmSs(totalQuestion * timePerQuestion) }}</h4>
     <button class="start-button" @click="onStart">START</button>
     <br /><br />
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+import { configuration } from '../../configuration';
 import { secondToHhMmSs } from "./../../util";
+
+
 export default {
   name: "StartPage",
-  props: ["totalQuestion"],
+  data() {
+    return {
+      timePerQuestion: configuration.timePerQuestion
+    }
+  },
+  computed: {
+    ...mapGetters(['totalQuestion'])
+  },
   methods: {
     onStart() {
-      this.$emit("next-page");
+      this.$router.push({name: 'test-page'})
     },
     secondToHhMmSs: secondToHhMmSs,
   },

@@ -1,15 +1,13 @@
 <template>
-  <McqTest msg="Welcome to Your Vue.js App"/>
+  <div class="root">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import McqTest from './components/McqTest/McqTest.vue'
 
 export default {
   name: 'App',
-  components: {
-    McqTest
-  }
 }
 </script>
 
@@ -20,5 +18,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.root {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  place-items: center;
 }
 </style>
